@@ -94,6 +94,11 @@ namespace WinFormsDarkMode
             root.BackColor = Color.Black;
         }
 
+        public static void Acrylic(Form form)
+        {
+            Dwm.Windows10EnableBlurBehind(form.Handle);
+        }
+
         public static void MakePrimaryButton(Button button)
         {
             button.FlatAppearance.MouseOverBackColor = Color.FromArgb(93, 188, 234);
